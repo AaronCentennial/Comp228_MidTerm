@@ -15,7 +15,8 @@ public class Lotto649 extends LottoGame implements IBonusNumber {
 	}
 
 	public int bonusNumber(){
-		return this._numberArray.remove(this._rnd.nextInt(this._setSize)+1);
+		//return this._numberArray.remove(this._rnd.nextInt(this._setSize)+1);
+		return this._numberArray.remove(this._rnd.nextInt(this._numberArray.size()));
 	}
 
 	@Override
@@ -23,7 +24,7 @@ public class Lotto649 extends LottoGame implements IBonusNumber {
 		String out="";
 		for (int i = 0; i < 5; i++) {
 			super.pickElements();
-			out=out+String.format("%d. ", i);
+			out=out+String.format("%d) ", i+1);
 			int size=this._elementArray.size();
 /*			for(int j=0;i<size;j++){
 				out+=Integer.toString(this._elementArray.get(j))+", ";

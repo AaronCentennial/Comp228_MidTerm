@@ -2,6 +2,7 @@ package com.company;
 
 import java.security.SecureRandom;
 import java.util.ArrayList;
+import java.util.Collections;
 //7 num from 1-49
 /**
  * Created by Aaron Fernandes(300773526) on 10 2015.
@@ -33,9 +34,10 @@ public abstract class LottoGame {
 	public void pickElements(){
 		this._initialize();
 		//this._elementArray.size();
-		for (int i = 1; i < this._elementNum; i++) {
+		for (int i = 0; i < this._elementNum; i++) {
 			this._elementArray.add(this._numberArray.remove(this._rnd.nextInt(this._numberArray.size())));
 		}
+		Collections.sort(this._elementArray);
 	}
 
 
