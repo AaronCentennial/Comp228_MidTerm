@@ -6,4 +6,4 @@ Overview: Create a console app that randomly picks 6 lottery numbers from 1 to 4
 unique bonus number. The program will randomly generate 5 sets of lottery numbers and display them 
 on the console.
 
-#### SEE: Exam 1 - Console Lottery Number Picker.pdf
+#### [SEE: Exam 1 - Console Lottery Number Picker.pdf](https://github.com/AaronCentennial/Comp228_MidTerm/blob/master/Exam%201%20-%20Console%20Lottery%20Number%20Picker.pdf)
